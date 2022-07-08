@@ -1,4 +1,4 @@
-// Homework 2. Task 3.
+ï»¿// Homework 2. Task 3.
 
 #include <iostream>
 #include <locale.h>
@@ -14,14 +14,14 @@ struct mailAddress
     unsigned long zipCode = 0;
 };
 
-void printAdress(mailAddress &address) 
+void printAdress(mailAddress address) 
 {
-    std::cout << "Ñòðàíà: " << address.country << std::endl;
-    std::cout << "Ãîðîä: " << address.city << std::endl;
-    std::cout << "Óëèöà: " << address.street << std::endl;
-    std::cout << "Íîìåð äîìà: " << address.buildingNum << std::endl;
-    std::cout << "Íîìåð êâàðòèðû: " << address.apartmentNum << std::endl;
-    std::cout << "Èíäåêñ: " << address.zipCode << "\n\n";
+    std::cout << "Ð¡Ñ‚Ñ€Ð°Ð½Ð°: " << address.country << std::endl;
+    std::cout << "Ð“Ð¾Ñ€Ð¾Ð´: " << address.city << std::endl;
+    std::cout << "Ð£Ð»Ð¸Ñ†Ð°: " << address.street << std::endl;
+    std::cout << "ÐÐ¾Ð¼ÐµÑ€ Ð´Ð¾Ð¼Ð°: " << address.buildingNum << std::endl;
+    std::cout << "ÐÐ¾Ð¼ÐµÑ€ ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€Ñ‹: " << address.apartmentNum << std::endl;
+    std::cout << "Ð˜Ð½Ð´ÐµÐºÑ: " << address.zipCode << "\n\n";
 }
 
 int main(int argc, char** argv)
@@ -30,27 +30,27 @@ int main(int argc, char** argv)
 
     mailAddress address1;
 
-    address1.country = "Ðîññèÿ";
-    address1.city = "Ìîñêâà";
-    address1.street = "Ãàçåòíûé ïåðåóëîê";
+    address1.country = "Ð Ð¾ÑÑÐ¸Ñ";
+    address1.city = "ÐœÐ¾ÑÐºÐ²Ð°";
+    address1.street = "Ð“Ð°Ð·ÐµÑ‚Ð½Ñ‹Ð¹ Ð¿ÐµÑ€ÐµÑƒÐ»Ð¾Ðº";
     address1.buildingNum = "17";
     address1.apartmentNum = "1";
     address1.zipCode = 125009;
 
     mailAddress address2;
 
-    address2.country = "Ðîññèÿ";
-    address2.city = "Îìñê";
-    address2.street = "Áàãðàòèîíà";
-    address2.buildingNum = "25Á";
+    address2.country = "Ð Ð¾ÑÑÐ¸Ñ";
+    address2.city = "ÐžÐ¼ÑÐº";
+    address2.street = "Ð‘Ð°Ð³Ñ€Ð°Ñ‚Ð¸Ð¾Ð½Ð°";
+    address2.buildingNum = "25Ð‘";
     address2.apartmentNum = "98";
     address2.zipCode = 644086;
 
     mailAddress address3;
 
-    address3.country = "Ðîññèÿ";
-    address3.city = "Ìîñêâà";
-    address3.street = "Áîëüøàÿ ñàäîâàÿ";
+    address3.country = "Ð Ð¾ÑÑÐ¸Ñ";
+    address3.city = "ÐœÐ¾ÑÐºÐ²Ð°";
+    address3.street = "Ð‘Ð¾Ð»ÑŒÑˆÐ°Ñ ÑÐ°Ð´Ð¾Ð²Ð°Ñ";
     address3.buildingNum = "10";
     address3.apartmentNum = "50";
     address3.zipCode = 123001;

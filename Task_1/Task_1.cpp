@@ -1,8 +1,8 @@
-// Homework 2. Task 1. Using enumeration for months output.
+ï»¿// Homework 2. Task 1. Using enumeration for months output.
 
 #include <iostream>
 
-enum class yMonths
+enum yMonths
 {
     Jan = 1,
     Feb,
@@ -27,66 +27,66 @@ int main(int argc, char** argv)
 
     while (q)
     {
-        std::cout << "Ââåäèòå íîìåð ìåñÿöà: ";
+        std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð¼ÐµÑÑÑ†Ð°: ";
         std::cin >> month;
 
         switch (month)
         {
         case(0):
-            std::cout << "Äî ñâèäàíèÿ" << std::endl;
+            std::cout << "Ð”Ð¾ ÑÐ²Ð¸Ð´Ð°Ð½Ð¸Ñ" << std::endl;
             q = false;
             break;
 
-        case(static_cast<int>(yMonths::Jan)):
-            std::cout << "ßíâàðü" << std::endl;
+        case(yMonths::Jan):
+            std::cout << "Ð¯Ð½Ð²Ð°Ñ€ÑŒ" << std::endl;
             break;
 
-        case(static_cast<int>(yMonths::Feb)):
-            std::cout << "Ôåâðàëü" << std::endl;
+        case(yMonths::Feb):
+            std::cout << "Ð¤ÐµÐ²Ñ€Ð°Ð»ÑŒ" << std::endl;
             break;
 
-        case(static_cast<int>(yMonths::Mar)):
-            std::cout << "Ìàðò" << std::endl;
+        case(yMonths::Mar):
+            std::cout << "ÐœÐ°Ñ€Ñ‚" << std::endl;
             break;
 
-        case(static_cast<int>(yMonths::Apr)):
-            std::cout << "Àïðåëü" << std::endl;
+        case(yMonths::Apr):
+            std::cout << "ÐÐ¿Ñ€ÐµÐ»ÑŒ" << std::endl;
             break;
 
-        case(static_cast<int>(yMonths::May)):
-            std::cout << "Ìàé" << std::endl;
+        case(yMonths::May):
+            std::cout << "ÐœÐ°Ð¹" << std::endl;
             break;
 
-        case(static_cast<int>(yMonths::Jun)):
-            std::cout << "Èþíü" << std::endl;
+        case(yMonths::Jun):
+            std::cout << "Ð˜ÑŽÐ½ÑŒ" << std::endl;
             break;
 
-        case(static_cast<int>(yMonths::Jul)):
-            std::cout << "Èþëü" << std::endl;
+        case(yMonths::Jul):
+            std::cout << "Ð˜ÑŽÐ»ÑŒ" << std::endl;
             break;
 
-        case(static_cast<int>(yMonths::Aug)):
-            std::cout << "Àâãóñò" << std::endl;
+        case(yMonths::Aug):
+            std::cout << "ÐÐ²Ð³ÑƒÑÑ‚" << std::endl;
             break;
 
-        case(static_cast<int>(yMonths::Sep)):
-            std::cout << "Ñåíòÿáðü" << std::endl;
+        case(yMonths::Sep):
+            std::cout << "Ð¡ÐµÐ½Ñ‚ÑÐ±Ñ€ÑŒ" << std::endl;
             break;
 
-        case(static_cast<int>(yMonths::Oct)):
-            std::cout << "Îêòÿáðü" << std::endl;
+        case(yMonths::Oct):
+            std::cout << "ÐžÐºÑ‚ÑÐ±Ñ€ÑŒ" << std::endl;
             break;
 
-        case(static_cast<int>(yMonths::Nov)):
-            std::cout << "Íîÿáðü" << std::endl;
+        case(yMonths::Nov):
+            std::cout << "ÐÐ¾ÑÐ±Ñ€ÑŒ" << std::endl;
             break;
 
-        case(static_cast<int>(yMonths::Dec)):
-            std::cout << "Äåêàáðü" << std::endl;
+        case(yMonths::Dec):
+            std::cout << "Ð”ÐµÐºÐ°Ð±Ñ€ÑŒ" << std::endl;
             break;
 
         default:
-            std::cout << "Âû ââåëè íåâåðíûé íîìåð ìåñÿöà. Ïîïðîáóéòå öåëîå ÷èñëà îò 1 äî 12." << std::endl;
+            std::cout << "Ð’Ñ‹ Ð²Ð²ÐµÐ»Ð¸ Ð½ÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð½Ð¾Ð¼ÐµÑ€ Ð¼ÐµÑÑÑ†Ð°. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð° Ð¾Ñ‚ 1 Ð´Ð¾ 12." << std::endl;
             break;
         }
     }

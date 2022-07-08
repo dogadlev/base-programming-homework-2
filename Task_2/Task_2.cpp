@@ -1,4 +1,4 @@
-// Homework_1. Task_2.
+ï»¿// Homework_1. Task_2.
 
 #include <iostream>
 #include <string>
@@ -14,13 +14,13 @@ struct bankAccount
 
 void createAccount(bankAccount &bankAcc)
 {
-    std::cout << "Ââåäèòå íîìåð ñ÷åòà: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‡ÐµÑ‚Ð°: ";
     std::cin >> bankAcc.account_number;
 
-    std::cout << "Ââåäèòå èìÿ âëàäåëüöà: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð²Ð»Ð°Ð´ÐµÐ»ÑŒÑ†Ð°: ";
     std::cin >> bankAcc.owner_name;
 
-    std::cout << "Ââåäèòå áàëàíñ: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð±Ð°Ð»Ð°Ð½Ñ: ";
     std::cin >> bankAcc.balance;
 }
 
@@ -29,9 +29,9 @@ void changeBalance(bankAccount &bankAcc, float moneyAmount)
     bankAcc.balance = moneyAmount;
 }
 
-void printBalance(bankAccount &bankAcc)
+void printBalance(bankAccount bankAcc)
 {
-    std::cout << "Âàø ñ÷åò: " << bankAcc.owner_name << ", " << bankAcc.account_number << ", " << bankAcc.balance << std::endl;
+    std::cout << "Ð’Ð°Ñˆ ÑÑ‡ÐµÑ‚: " << bankAcc.owner_name << ", " << bankAcc.account_number << ", " << bankAcc.balance << std::endl;
 }
 
 int main(int argc, char** argv)
@@ -45,7 +45,7 @@ int main(int argc, char** argv)
 
     createAccount(bankAcc);
 
-    std::cout << "Ââåäèòå íîâûé áàëàíñ: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ Ð±Ð°Ð»Ð°Ð½Ñ: ";
     std::cin >> moneyAmount;
 
     changeBalance(bankAcc, moneyAmount);
